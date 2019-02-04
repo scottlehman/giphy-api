@@ -1,0 +1,43 @@
+<!-- var topics ['search', 'ternms', 'get', 'pushed', 'here'];
+
+for loop to take every array object and turn it into a button and use ='data-' for search term value of each item
+when button is clicked
+
+search bar
+-push searched 'string' to array
+-create button that has the data-value and named of searched term and append to html 
+-also when search is clicked, send get request to giphy pull 10 gifs (&limit=10) with ?q="searched item" and &rating=get
+-make sure the gifs are static and will play with a on.click and stop with a on.click 
+-under every gif display the rating
+
+.then function will prepend the div with the ten gifs pulled from giphy
+
+button will also be saved to html and always search for that data-value on.click
+
+&limit=10
+query ?q=
+&rating=g -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy API</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="buttonLinks"></div>
+        <form>
+            <input type="text" id="searchBar" placeholder="search for a dog">
+            <input type="button" id="submitBtn" class="submit" value="Submit">
+        </form> 
+        <div id="searchedGifs"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>

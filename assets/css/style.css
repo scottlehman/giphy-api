@@ -1,0 +1,26 @@
+body {
+    background: tomato;
+}
+
+button {
+    margin: 5px;
+    padding: 3px;
+}
+
+#container {
+    margin-left: 10%;
+    width: 80%;
+}
+
+
+
+.gifDiv {
+    float: left;
+    margin: 5px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
